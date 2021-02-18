@@ -12,11 +12,14 @@ RUN echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /
 RUN sudo apt-get -q update 
 RUN sudo apt-get -q install -y kubectl
 
+RUN sudo apt-get update -y
+RUN sudo apt-get install -y conntrack
 RUN curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube
 RUN sudo cp minikube /usr/local/bin && rm minikube
 
 RUN curl -Lo kind https://github.com/kubernetes-sigs/kind/releases/download/v0.7.0/kind-$(uname)-amd64
 RUN chmod +x kind
 RUN sudo mv kind /usr/local/bin
+
 
 USER root
