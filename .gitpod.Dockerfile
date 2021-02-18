@@ -13,6 +13,6 @@ RUN sudo apt-get -q update
 RUN sudo apt-get -q install -y kubectl
 
 RUN curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube
-# RUN sudo cp minikube /usr/local/bin && rm minikube
+RUN sudo cp minikube /usr/local/bin && rm minikube
 
 USER root
