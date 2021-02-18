@@ -8,7 +8,7 @@ RUN npm install -g yarn
 
 RUN sudo apt-get -q update && sudo apt-get install -y apt-transport-https gnupg2 curl
 RUN curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-#RUN echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+RUN echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
 #RUN sudo apt-get -q update 
 #RUN sudo apt-get -q install -y kubectl
 
