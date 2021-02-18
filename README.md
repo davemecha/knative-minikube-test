@@ -1,8 +1,11 @@
 # knative-minikube-test
 
+sudo docker-up
+
 ## minikube
 
 minikube start --vm-driver=none --addons=ingress
+
 minikube start --driver=docker --addons=ingress
 
 ## k3s
