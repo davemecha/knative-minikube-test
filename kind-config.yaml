@@ -7,8 +7,3 @@ nodes:
         hostPort: 3080
       - containerPort: 443
         hostPort: 3443
-# docker: Error response from daemon:
-#   OCI runtime create failed: container_linux.go:349:
-#   starting container process caused "process_linux.go:449: container init caused
-#     "rootfs_linux.go:58: mounting "cgroup" to rootfs "/workspace/.docker-root/overlay2/0d8e17459dad864668eff069973b900e63d46f4a1bc12363557119155e8a923d/merged"
-#       at "/sys/fs/cgroup" caused "operation not permitted"": unknown.
